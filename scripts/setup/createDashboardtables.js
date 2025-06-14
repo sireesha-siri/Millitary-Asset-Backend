@@ -1,4 +1,4 @@
-const db = require('./database');
+const db = require('../../db/database');
 
 db.serialize(() => {
   db.run(`
@@ -30,6 +30,7 @@ db.serialize(() => {
   `);
 
   db.run(`
+    CREATE TABLE IF NOT EXISTS assets (
      asset_id TEXT PRIMARY KEY,
   equipment_type_id TEXT NOT NULL,
   model_name TEXT,

@@ -2,7 +2,7 @@
 GET http://localhost:4000/users
 
 ### Get all roles
-GET http://localhost:4000/roles
+GET http://localhost:4000/assets
 
 ### Get user roles
 GET http://localhost:4000/user-roles
